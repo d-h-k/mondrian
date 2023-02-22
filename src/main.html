@@ -7,38 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        @font-face {
-            font-family: "LeeSeoyun";
-            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff") format("woff");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        body {
-            font-family: '';
-            margin: 0px;
-            display: flex;
-            justify-content: center;
-            background-image: url("../img/background.png");
-        }
-
-        .container {
-            width: 390px;
-            background-color: orange;
-            height: 100%;
-        }
-
-        .photos{
-            margin-top: 30px;
-        }
-
-        .photo-frame{
-            background-color: white;
-            margin: 15px 20px;
-            height: 200px;
-        }
-    </style>
+    <link rel="stylesheet" href="./app.css" type="text/css"></link>
+    <script src="./app.js"></script>
 </head>
 
 <body>
@@ -52,8 +22,9 @@
             <div id="image4" class="photo-frame">사진4</div> -->
 
 
-            <div id="image1" class="photo-frame">
-                <span id="desc1" class="photo-description">
+            <div id="image1" class="photo-frame" onm>
+                <span id="desc1" class="photo-description" onmouseover="hideText(1)" onmouseout="showText(1)"
+                    onclick="alertText(1)">
                     첫번째이미지 설명
                 </span>
             </div>
